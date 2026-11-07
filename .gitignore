@@ -1,0 +1,55 @@
+HELP.md
+target/
+
+# Frontend
+**/node_modules
+**/dist
+**/.pnpm-store
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+# Environment variables & secrets
+*.env
+test-output.txt
+app/src/main/resources/application-dev.yml
+
+# Local-only docs
+/docs
+SETUP_API_KEYS.md
+CLAUDE.local.md
+GEMINI.md
+
+# AI assistant
+/.claude/*
+!/.claude/rules/
+!/.claude/rules/**
+
+# IDEA code analysis
+qodana.yaml
+
+# Misc
+/app/bin
+.playwright-mcp/
+/.agents
+skills-lock.json
+*.log
+.DS_Store
+
+# 隐私数据：环境密钥与 AI 助手说明只保留本地
+CLAUDE.md

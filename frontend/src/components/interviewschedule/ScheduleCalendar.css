@@ -1,0 +1,75 @@
+/* ScheduleCalendar.css - 面试日历自定义样式 */
+
+/* 增大周视图和日视图中的时间槽高度 */
+.rbc-time-view .rbc-time-content .rbc-timeslot-group {
+  min-height: 60px !important;
+}
+
+/* 确保事件具有最小高度 */
+.rbc-event {
+  min-height: 50px !important;
+}
+
+/* 月视图中的事件不需要最小高度 */
+.rbc-month-view .rbc-event {
+  min-height: auto !important;
+}
+
+/* 允许事件内容溢出，以便更好地展示文本 */
+.rbc-time-view .rbc-event-content {
+  overflow: visible !important;
+}
+
+/* 设置时间槽高度 */
+.rbc-time-view .rbc-time-slot {
+  height: 30px !important;
+}
+
+/* 浅色模式下的时间槽边框样式 */
+.rbc-day-slot .rbc-time-slot {
+  border-top: 1px solid #f1f5f9 !important;
+}
+
+/* 深色模式下的时间槽边框样式 */
+.dark .rbc-day-slot .rbc-time-slot {
+  border-top: 1px solid rgba(71, 85, 105, 0.3) !important;
+}
+
+/* 提升事件时间标签的可读性 */
+.rbc-event-label {
+  font-size: 11px !important;
+  font-weight: 500 !important;
+}
+
+/* 确保事件可以展开以显示内容 */
+.rbc-time-content {
+  overflow-y: auto !important;
+}
+
+/* 优化月视图的行间距 */
+.rbc-month-row {
+  min-height: 100px !important;
+}
+
+/* 优化日历表头样式 */
+.rbc-header {
+  padding: 12px 8px !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+}
+
+/* 深色模式下的日历表头 */
+.dark .rbc-header {
+  color: #cbd5e1 !important;
+  background: transparent !important;
+  border-color: rgba(71, 85, 105, 0.3) !important;
+}
+
+/* 深色模式下的日历单元格 */
+.dark .rbc-off-range-bg {
+  background: rgba(30, 41, 59, 0.3) !important;
+}
+
+.dark .rbc-today {
+  background: rgba(59, 130, 246, 0.1) !important;
+}
